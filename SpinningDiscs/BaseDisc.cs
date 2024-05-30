@@ -50,7 +50,7 @@ namespace SpinningDiscs
                 return "Not enough disc space!";
             }
             CapacityUsed += size;
-            RemainingCapacity += size;
+            RemainingCapacity -= size;
 
             return "Data written to disc. Remaining space = " + RemainingCapacity;
         }

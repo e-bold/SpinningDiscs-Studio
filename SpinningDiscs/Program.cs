@@ -7,10 +7,13 @@ cd.SpinDisc();
 dvd.SpinDisc();
 
 cd.ReadData();
-dvd.ReadData();
+cd.WriteData(350);
 
-Console.WriteLine(cd.WriteData(275));
-Console.WriteLine(dvd.WriteData(8000));
+dvd.ReadData();
+dvd.WriteData(3250);
+
+
+
 
 Console.WriteLine(cd.DiskInfo());
 Console.WriteLine(dvd.DiskInfo());
