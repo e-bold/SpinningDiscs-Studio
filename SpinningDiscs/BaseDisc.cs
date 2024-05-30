@@ -34,6 +34,7 @@ namespace SpinningDiscs
         public int SpaceLeft()
         {
             return StorageCapacity - CapacityUsed;
+            //test
         }
 
         public string DiskInfo()
